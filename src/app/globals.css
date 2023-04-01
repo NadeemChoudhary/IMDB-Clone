@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ----Dark---- */
+
+body{
+    background: #000000e3;
+}
+span{
+    color: white;
+}
