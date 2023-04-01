@@ -14,7 +14,9 @@ export default function Home() {
   const FetchData = async () => {
     try {
       const { data: { results } } = await axios.get(`https://api.themoviedb.org/3/movie/${category}?api_key=1cb845cc55dd460ae0d5f6c75731b7c3&language=en-US&page=1`);
-      flushSync(() => setData(results))
+      if(results){
+        setData(results)
+      }
 
     } catch (error) {
       alert(error)
