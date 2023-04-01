@@ -23,7 +23,6 @@ export default function Home() {
 
   useEffect(() => {
     FetchData()
-    console.log(Data)
   }, [category])
 
   return (

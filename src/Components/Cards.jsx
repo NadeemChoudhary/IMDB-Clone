@@ -9,7 +9,7 @@ function Cards({ Data }) {
                     // <span>{res.original_title}</span>
 
                     <div className=" bg-transparent  cursor-pointer m-4 sm:shadow-stone-600 border border-transparent rounded  group sm:shadow-md   sm:hover:scale-105 transition-m duration-500   border-slate-600" key={res.id} >
-                        <img src={`https://image.tmdb.org/t/p/original/${res.poster_path}`} className='w-96 h-76'
+                        <Image src={`https://image.tmdb.org/t/p/original/${res.poster_path}`} className='w-96 h-76'
 
                             alt="movie images"
                         />
